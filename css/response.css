@@ -4,11 +4,20 @@
    		
   	}
   	header {
+  		padding: 1em;
   		width: 100%;
-  		padding: 1em 1em;
-  		overflow: hidden;
   	}
   	nav {
   		margin: 1em 2em 0 0;
   	}
+  	#content-one, #content-two, #quote {
+  		padding-left: 1em;
+  		padding-right: 1em;
+  	}
+  	section div.feat {
+  		width: 48% !important;
+  	}
+	  	/*section div.feat:last-child {
+	  		display: none;
+	  	}*/
 }

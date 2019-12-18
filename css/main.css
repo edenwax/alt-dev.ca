@@ -20,6 +20,7 @@ body, html {
 	font-family: 'DM Sans', sans-serif;
 	font-size: 1em;
 	font-weight: 400;
+	background: #176477;
 }
 /* resets */
 a, h1, h2, h3, h4, h5, ul, li, div, section {
@@ -41,6 +42,10 @@ a, h1, h2, h3, h4, h5, ul, li, div, section {
 	background: #fff;
 	width: 110px;
 	margin: 1.5em 0;
+}
+#page-wrap {
+	width: 100%;
+	overflow: hidden;
 }
 	#header-wrap {
 		background: url(../img/bg1.jpg) no-repeat center center;
@@ -135,17 +140,19 @@ a, h1, h2, h3, h4, h5, ul, li, div, section {
 					}
 			#content-two {
 				background: #333;
-				padding: 3em 0 8em 0;
+				padding: 1em 0 9em 0;
 				color: #fff;
 			}
 				#content-two section {
 					max-width: 1440px;
 					margin: 0 auto;
 					display: flex;
+					flex-wrap: wrap;
 					justify-content: space-between;
 				}
 					#content-two .feat {
-						width: 20%;
+						width: 22%;
+						padding-top: 2em;
 					}
 					#content-two .line {
 						width: 30%;
@@ -166,12 +173,11 @@ a, h1, h2, h3, h4, h5, ul, li, div, section {
 						}
 			#quote {
 				max-width: 1440px;
-				margin: 0 auto;
-				z-index: 99;
-				margin-top: -4em;
+				margin: -4em auto 0 auto;
 				background: #fff;
 				box-shadow: rgba(0,0,0,0.4) 0 0 25px;
 				text-align: center;
+				z-index: 999;
 			}
 				#quote h1 {
 					font-size: 1.6em;
@@ -193,3 +199,8 @@ a, h1, h2, h3, h4, h5, ul, li, div, section {
 							border: 2px solid #176477;
 							color: #fff;
 						}
+			#content-three {
+				min-height: 600px;
+				margin-top: -5em;
+				z-index: -99;
+			}
