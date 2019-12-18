@@ -43,6 +43,10 @@ a, h1, h2, h3, h4, h5, ul, li, div, section {
 	width: 110px;
 	margin: 1.5em 0;
 }
+.poppins {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 700;
+}
 #page-wrap {
 	width: 100%;
 	overflow: hidden;
@@ -180,13 +184,15 @@ a, h1, h2, h3, h4, h5, ul, li, div, section {
 				z-index: 999;
 			}
 				#quote h1 {
-					font-size: 1.6em;
+					font-size: 1.4em;
 					font-weight: 700;
 					padding: 2em;
 					color: #333;
 				}
 					#quote h1 a {
 						font-weight: 700;
+						font-size: 0.8em !important;
+						text-transform: uppercase;
 						padding: 0.8em 1.2em;
 						border: 2px solid #86bac7;
 						border-radius: 14px;
@@ -199,8 +205,33 @@ a, h1, h2, h3, h4, h5, ul, li, div, section {
 							border: 2px solid #176477;
 							color: #fff;
 						}
-			#content-three {
+			#about {
 				min-height: 600px;
 				margin-top: -5em;
 				z-index: -99;
 			}
+				#about section {
+					max-width: 1440px;
+					margin: 9em auto 0 auto;
+					display: flex;
+				}
+					#about .left {
+						width: 60%;
+					}
+						#about section h1 {
+							color: #fff;
+							font-size: 2em;
+						}
+						#about section .line {
+							margin: 0.6em 0 1em 0;
+						}
+						#about section .thin {
+							font-weight: 400;
+						}
+						#about section p {
+							color: #ace2ef;
+							line-height: 1.4em;
+						}
+					#about .right {
+						width: 40%;
+					}
