@@ -1,0 +1,195 @@
+/* 
+     _    _ _             ____             
+    / \  | | |_     _    |  _ \  _____   __
+   / _ \ | | __|  _| |_  | | | |/ _ \ \ / /
+  / ___ \| | |_  |_   _| | |_| |  __/\ V / 
+ /_/   \_\_|\__|   |_|   |____/ \___| \_/  
+                                           
+
+   main.css for alt-dev.ca 
+   -----------------------
+   version: 		0.0.1-dev       
+   created:    		17-dec-2019
+   last-modified:  	17-dec-2019
+   modified by:		colin berry
+   -----------------------
+*/
+body, html {
+	margin: 0;
+	padding: 0;
+	font-family: 'DM Sans', sans-serif;
+	font-size: 1em;
+	font-weight: 400;
+}
+/* resets */
+a, h1, h2, h3, h4, h5, ul, li, div, section {
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+	font-weight: 400;
+}
+	h1 {
+		font-size: 3em;
+		font-weight: 700;
+	}
+	h2 {
+		font-size: 1.4em;
+		font-weight: 400;
+	}
+.line {
+	height: 3px;
+	background: #fff;
+	width: 110px;
+	margin: 1.5em 0;
+}
+	#header-wrap {
+		background: url(../img/bg1.jpg) no-repeat center center;
+		/* image is not compressed, will be done later */
+		background-size: cover;
+		min-height: 600px;
+	}
+		header {
+			max-width: 1440px;
+			margin: 0 auto;
+			display: flex;
+			justify-content: space-between;
+			padding: 1em 0 0 0;
+		}
+			#logo {
+				width: 20%;
+			}
+				#logo img {
+					max-width: 181px;
+					height: auto;
+				}
+			nav { /* im not happy with the nav, i'll come back to this later */
+				width: 40%;
+				margin: 12px 0 0 0;
+			}
+				nav div {
+					display: flex;
+					justify-content: space-around;
+					border-radius: 10px;
+					background: #fff;
+				}
+				nav a {
+					color: #1c1e1d;
+					font-weight: 700;
+					font-size: 1em;
+					transition: all .1s ease-in-out;
+				}
+					nav ul {
+						list-style-type: none;
+						display: flex;
+					}
+						nav li {
+							background: #fff;
+							display: inline-block;
+							width: 25%;
+							text-align: center;
+							transition: all .1s ease-in-out;
+						}
+							nav a {
+								display: block;
+								padding: 1em 0;
+							}
+								nav li:hover {
+									background: #176477;
+								}
+									nav a:hover {
+										color: #fff;
+									}
+									nav li:first-child {
+										border-radius: 10px 0 0 10px;
+									}
+									nav li:last-child {
+										border-radius: 0 10px 10px 0;
+									}
+			#content-one {
+				max-width: 1440px;
+				margin: 0 auto;
+				color: #fff;
+			}
+				#content-one h1 {
+					margin: 2em 0 0 0;
+				}
+				#content-one p {
+					width: 60%;
+				}
+					#content-one p.work {
+						margin: 2em 0 0 0;
+						font-weight: 700;
+					}
+				#content-one a {
+					padding: 1em 2em;
+					border: 1px solid #fff;
+					border-radius: 10px;
+					color: #fff;
+					margin: 0 0 0 1em;
+					font-weight: 700;
+					transition: all .1s ease-in-out;
+				}
+					#content-one a:hover {
+						background: #fff;
+						color: #176477;
+					}
+			#content-two {
+				background: #333;
+				padding: 3em 0 8em 0;
+				color: #fff;
+			}
+				#content-two section {
+					max-width: 1440px;
+					margin: 0 auto;
+					display: flex;
+					justify-content: space-between;
+				}
+					#content-two .feat {
+						width: 20%;
+					}
+					#content-two .line {
+						width: 30%;
+						margin: 1em 0 1em 0;
+					}
+						#content-two .feat-title {
+							font-weight: 400;
+							font-size: 1.4em;
+							padding: 1em 0 0 0;
+						}
+							#content-two .feat-title svg {
+								color: #fff;
+								font-size: 1em;
+								margin: 0 0.5em 0 0;
+							}
+						#content-two .feat-desc {
+							line-height: 1.6em;
+						}
+			#quote {
+				max-width: 1440px;
+				margin: 0 auto;
+				z-index: 99;
+				margin-top: -4em;
+				background: #fff;
+				box-shadow: rgba(0,0,0,0.4) 0 0 25px;
+				text-align: center;
+			}
+				#quote h1 {
+					font-size: 1.6em;
+					font-weight: 700;
+					padding: 2em;
+					color: #333;
+				}
+					#quote h1 a {
+						font-weight: 700;
+						padding: 0.8em 1.2em;
+						border: 2px solid #86bac7;
+						border-radius: 14px;
+						margin: 0 0 0 1em;
+						color: #176477;
+						transition: all .1s ease-in-out;
+					}
+						#quote h1 a:hover {
+							background: #176477;
+							border: 2px solid #176477;
+							color: #fff;
+						}

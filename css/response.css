@@ -1,0 +1,14 @@
+/* response.css */
+@media only screen and (max-width: 1460px) {
+ 	body {
+   		
+  	}
+  	header {
+  		width: 100%;
+  		padding: 1em 1em;
+  		overflow: hidden;
+  	}
+  	nav {
+  		margin: 1em 2em 0 0;
+  	}
+}
