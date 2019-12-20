@@ -10,6 +10,7 @@
         <link rel="shortcut icon" href="img/favicon.png" />
         <link href="https://fonts.googleapis.com/css?family=DM+Sans:400,500,700|Poppins:400,700&display=swap" rel="stylesheet"> 
         <script defer src="font/all.js"></script>
+        <script defer src="js/main.js"></script>
     </head>
 <body>
     <div id="page-wrap">
@@ -21,9 +22,28 @@
                 <nav>
                     <ul>
                         <li><a href="">Home</a></li>
-                        <li><a href="">About</a></li>
-                        <li><a href="">Work</a></li>
+                        <li class="dropdown">
+                            <a href="">About <i class="fas fa-caret-down"></i></a>
+                            <ul>
+                                <li><a href="">
+                                        <i class="fas fa-users"></i> 
+                                        Meet the Team
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="">Our Work <i class="fas fa-caret-down"></i></a>
+                            <ul>
+                                <li><a href="">
+                                        <i class="fas fa-bomb"></i> 
+                                        BIMS
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
                         <li><a href="">Contact</a></li>
+                        <li><a href="">More <i class="fas fa-plus-circle"></i></a></li>
                     </ul>
                 </nav>
             </header>
@@ -82,7 +102,7 @@
         <div id="about">
             <section>
                 <div class="left">
-                    <h1><span class="poppins">About</span> <span class="thin">Alt+Dev</span></h1>
+                    <h1><span class="poppins bold700">About</span> <span class="thin">Alt+Dev</span></h1>
                     <div class="line"></div>
                     <p>Vestibulum laoreet rutrum elit non accumsan. Sed pharetra dui sem, at semper dolor consequat ac. Aliquam nulla lectus, efficitur in mi in, rutrum porttitor dui. Nam in tincidunt nulla. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam vel leo sed eros fermentum bibendum. Aenean elementum vestibulum pellentesque. Quisque malesuada tempus vehicula. Pellentesque porttitor pharetra augue sed pharetra. Ut malesuada aliquet metus, vulputate aliquam lorem vulputate ac.</p>
                 </div>
