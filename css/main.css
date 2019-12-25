@@ -53,6 +53,12 @@ a, h1, h2, h3, h4, h5, ul, li, div, section {
 .uppercase {
 	text-transform: uppercase;
 }
+#mobile-nav-button {
+	display: none;
+}
+#mobile-nav {
+	display: none;
+}
 #page-wrap {
 	width: 100%;
 	overflow: hidden;
@@ -76,74 +82,81 @@ a, h1, h2, h3, h4, h5, ul, li, div, section {
 				font-size: 1.6em;
 				padding: 12px 0 0 0;
 			}
+				#logo a img {
+					width: 137px;
+					height: 60px;
+				}
 				#logo a {
 					color: #fff;
 				}
-			nav {
+			#desktop-nav {
 				width: 40%;
 				margin: 12px 0 0 0;\
 			}
-				nav ul {
+				#desktop-nav ul {
 					list-style-type: none;
 					display: flex;
 					justify-content: right;
 					width: 100%;
 				}
-				nav a {
+				#desktop-nav a {
 					color: #1c1e1d;
 					font-weight: 700;
 					font-size: 1em;
-					transition: all .1s ease-in-out;
 					display: block;
 					padding: 1em 1.4em;
+					transition: color .1s ease-in-out;
 				}
-					nav a svg {
+					#desktop-nav a svg {
 						margin: 0 0 0 0.7em;
 						display: inline-block;
 					}
-						nav li {
+						#desktop-nav li {
 							background: #fff;
 							text-align: center;
-							transition: all .1s ease-in-out;
+							transition: background .1s ease-in-out;
 						}
-							nav li:hover {
+							#desktop-nav li:hover {
 								background: #176477;
 							}
-								nav li:hover a, nav li:active a {
+								#desktop-nav li:hover a, #desktop-nav li:active a {
 									color: #fff;
 								}
-								nav li:first-child {
+								#desktop-nav li:first-child {
 									border-radius: 10px 0 0 10px;
 								}
-								nav li:last-child {
+								#desktop-nav li:last-child {
 									border-radius: 0 10px 10px 0;
 								}
-						nav li.dropdown ul {
-							display: none;
+						#desktop-nav li.dropdown ul {
+							opacity: 0;
+							visibility: hidden;
 							position: absolute;
 						}
-						nav li.dropdown:hover ul {
+						#desktop-nav li.dropdown:hover ul {
 							display: block;
+							visibility: visible;
+							opacity: 1;
 							border-radius: 0;
 						}
-							nav li.dropdown:hover li {
+							#desktop-nav li.dropdown:hover li {
 								display: block;
 								border-radius: 0;
 								text-align: left;
 								width: 250px;
 							}
-								nav li.dropdown:hover li a {
-									display: block;
+								#desktop-nav li.dropdown:hover li a {
+									/*display: block;*/
 									padding-left: 1.4em;
 									color: #1c1e1d;
 								}
-								nav li.dropdown:hover li a svg {
+								#desktop-nav li.dropdown:hover li a svg {
 									margin: 0 0.7em 0 0;
 								}
-								nav li.dropdown:hover li a:hover {
+								#desktop-nav li.dropdown:hover li a:hover {
 									color: #fff;
 								}
-								nav li.dropdown:hover li:last-child {
+								#desktop-nav li.dropdown:hover li:last-child {
 									border-radius: 0 0 10px 10px;
 								}
 			#content-one {
@@ -233,6 +246,7 @@ a, h1, h2, h3, h4, h5, ul, li, div, section {
 						margin: 0 0 0 1em;
 						color: #176477;
 						transition: all .1s ease-in-out;
+						z-index: 999;
 					}
 						#quote h1 a:hover {
 							background: #176477;
@@ -254,14 +268,15 @@ a, h1, h2, h3, h4, h5, ul, li, div, section {
 					}
 						#about section h1 {
 							color: #fff;
-							font-size: 2em;
-						}
-						#about section .line {
-							margin: 0.6em 0 1em 0;
-							width: 50px;
-						}
-						#about section .thin {
+							font-size: 1.4em;
 							font-weight: 400;
+						}
+							#about h1 svg {
+								margin: 0 0.5em 0 0;
+							}
+						#about section .line {
+							margin: 1em 0 1em 0;
+							width: 95px;
 						}
 						#about section p {
 							color: #ace2ef;

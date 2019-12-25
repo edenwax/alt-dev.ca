@@ -4,10 +4,10 @@
    		
   	}
   	header {
-  		padding: 1em;
+  		padding: 14px;
   		width: 100%;
   	}
-  	nav {
+  	#desktop-nav {
   		margin: 1em 2em 0 0;
   		width: 70%;
   	}
@@ -21,4 +21,117 @@
 	  	/*section div.feat:last-child {
 	  		display: none;
 	  	}*/
+	#about {
+		width: 100%;
+	}
+		#about .left {
+			padding: 0 1em 0 1em;
+		}
+
+		#about .right {
+			padding: 0 1em 0 0;
+		}
+}
+
+@media only screen and (max-width: 850px) {
+	header {
+		padding: 14px;
+	}
+ 	#desktop-nav li a svg {
+ 		display: none !important;
+ 	}
+ 	#content-one {
+ 		overflow: hidden;
+ 		padding: 0 1em 4em 1em;
+ 	}
+ 	#content-one p {
+		width: 100%;
+	}
+	#content-two {
+		padding: 1em 1em 4em 1em;
+	}
+	#quote {
+		margin-top: 0;
+	}
+		#quote h1 a {
+			display: block;
+			margin: 1em 0 0 0;
+			font-size: 1.2em;
+		}
+	#about {
+		margin-top: 0;
+	}
+		#about section {
+			display: block;
+			width: 100%;
+			margin: 0;
+			padding: 0;
+		}
+	 
+	 	#about .left {
+	 		padding: 4em 1em;
+	 		width: auto;
+	 		display: block;	 	
+	 	}
+	 	#about .right {
+	 		display: none;
+	 	}
+}
+
+@media only screen and (max-width: 730px) {
+ 	header {
+ 		width: 100%;
+ 		padding: 0;
+ 	}
+ 		#logo {
+ 			padding: 26px 0 0 14px;
+ 		}
+ 	#desktop-nav {
+ 		display: none;
+ 	}
+ 	#mobile-nav-button {
+ 		display: initial;
+ 		margin: 25px 1em 0 0;
+ 		cursor: pointer;
+ 	}
+	 	
+ 		#mobile-nav {
+ 			
+ 		}
+ 		#mobile-nav li a {
+ 			color: #fff;
+ 			font-weight: 700;
+ 			padding: 1em;
+ 			display: block;
+ 			border-bottom: 1px solid rgba(0,0,0,0.2);
+ 		}
+ 		#mobile-nav li a div {
+ 			display: inline-block;
+ 			width: 2em;
+ 		}
+ 			#mobile-nav li svg {
+ 				color: #c1ebf5;
+ 			}
+ 		#mobile-nav li a:hover, #mobile-nav li a:active, #mobile-nav li a:focus {
+ 			background: rgba(0,0,0,0.2);
+ 		}
+ 			#mobile-nav-button svg {
+ 				font-size: 1.6em;
+ 				padding: 0.5em 0.58em;
+ 				border-radius: 10px;
+ 				background: #fff;
+ 				color: #1c1e1d;
+ 			}
+ 				#mobile-nav-button svg:active, #mobile-nav-button svg:focus {
+ 					background: #176477;
+ 					color: #fff;
+ 				}
+ 	/* will revisit these importants */
+ 	.feat-title {
+ 		font-size: 1em !important;
+ 		font-weight: 700 !important;
+ 	}
+ 	.feat-desc {
+ 		font-size: 0.8em !important;
+ 	}
 }
