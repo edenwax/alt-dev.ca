@@ -1,8 +1,5 @@
 /* response.css */
 @media only screen and (max-width: 1460px) {
- 	body {
-   		
-  	}
   	header {
   		padding: 14px;
   		width: 100%;
@@ -18,9 +15,6 @@
   	section div.feat {
   		width: 48% !important;
   	}
-	  	/*section div.feat:last-child {
-	  		display: none;
-	  	}*/
 	#about {
 		width: 100%;
 	}
