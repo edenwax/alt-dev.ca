@@ -8,9 +8,9 @@
 
    main.css for alt-dev.ca 
    ----------------------------
-   version: 		0.0.4-dev       
+   version: 		0.0.5-dev       
    created:    		17-dec-2019
-   last-modified:  	24-dec-2019
+   last-modified:  	28-dec-2019
    modified by:		colin berry
    ----------------------------
 */
@@ -83,15 +83,15 @@ a, h1, h2, h3, h4, h5, ul, li, div, section {
 				padding: 12px 0 0 0;
 			}
 				#logo a img {
-					width: 137px;
-					height: 60px;
+					width: 200px;
+					height: 88px;
 				}
 				#logo a {
 					color: #fff;
 				}
 			#desktop-nav {
 				width: 40%;
-				margin: 12px 0 0 0;\
+				margin: 12px 0 0 0;
 			}
 				#desktop-nav ul {
 					list-style-type: none;
@@ -107,10 +107,17 @@ a, h1, h2, h3, h4, h5, ul, li, div, section {
 					padding: 1em 1.4em;
 					transition: color .1s ease-in-out;
 				}
-					#desktop-nav a svg {
+					#desktop-nav .dropdown a svg {
 						margin: 0 0 0 0.7em;
 						display: inline-block;
 					}
+					.contact {
+						border-radius: 0 10px 10px 0;
+						margin: 0 1em 0 0;
+					}
+						.social-first {
+							border-radius: 10px 0 0 10px;
+						}
 						#desktop-nav li {
 							background: #fff;
 							text-align: center;
@@ -165,7 +172,7 @@ a, h1, h2, h3, h4, h5, ul, li, div, section {
 				color: #fff;
 			}
 				#content-one h1 {
-					margin: 2em 0 0 0;
+					margin: 3em 0 0 0;
 				}
 				#content-one p {
 					width: 60%;
@@ -238,8 +245,9 @@ a, h1, h2, h3, h4, h5, ul, li, div, section {
 				}
 					#quote h1 a {
 						font-weight: 700;
-						font-family: 'Poppins', sans-serif;
+						text-transform: uppercase;
 						font-size: 0.8em !important;
+						letter-spacing: 2px;
 						padding: 0.8em 1.2em;
 						border: 2px solid #86bac7;
 						border-radius: 10px;
