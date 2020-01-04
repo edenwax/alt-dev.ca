@@ -262,9 +262,9 @@ a, h1, h2, h3, h4, h5, ul, li, div, section {
 							color: #fff;
 						}
 			#about {
-				min-height: 600px;
 				margin-top: -5em;
 				z-index: -99;
+				padding: 0 0 4em 0;
 			}
 				#about section {
 					max-width: 1440px;
@@ -285,11 +285,106 @@ a, h1, h2, h3, h4, h5, ul, li, div, section {
 						#about section .line {
 							margin: 1em 0 1em 0;
 							width: 95px;
+							background: #f7a350;
 						}
 						#about section p {
 							color: #ace2ef;
 							line-height: 1.4em;
 						}
+							#about .left a {
+								padding: 1em 1.2em;
+								margin: 0 1em 0 0;
+								border: 2px solid #ace2ef;
+								border-radius: 10px;
+								color: #fff;
+								font-weight: 700;
+								transition: all .1s ease-in-out;
+							}
+								p.mtt-link {
+									margin: 2em 0 0 0;
+								}
+								#about .left svg {
+									margin: 0 1em 0 0;
+								}
+								#about .left a:hover {
+									background: #f7a350;
+									border: 2px solid #f7a350;
+									color: #fff;
+								}
 					#about .right {
 						width: 40%;
+						text-align: center;
 					}
+						#about .right svg {
+							color: #f7a350;
+							font-size: 16em;
+						}
+						#about .right div {
+							display: block;
+							color: #ace2ef;
+							margin: 2em 0 0 0;
+						}
+		footer {
+			min-height: 600px;
+			background: #333;
+			width: 100%;
+		}
+			#footer-wrapper {
+				max-width: 1440px;
+				margin: 0 auto;
+				padding: 4em 0;
+			}
+				#footer-columns {
+					display: flex;
+					justify-content: space-between;
+				}
+					#footer-columns div {
+						width: 30%;
+						color: #bdbdbd;
+					}
+					#foot-logo {}
+						#foot-logo h2 {
+							margin: 1em 0 0 0;
+							padding: 0;
+							font-weight: 400;
+						}
+						#foot-logo .line {
+							background: #1f1f1f;
+							margin: 1em 0 1em 0;
+						}
+						#foot-logo p {
+							margin: 0 0 1em 0;
+						}
+
+
+					#foot-sitemap {
+
+					}
+						#foot-sitemap ul {
+							list-style-type: none;
+						}
+							#foot-sitemap li a {
+								color: #fff;
+								font-weight: 700;
+								padding: 1em;
+								display: block;
+								border-bottom: 1px solid rgba(0,0,0,0.2);
+								transition: all .1s ease-in-out;
+							}
+								#foot-sitemap li a.last {
+									border: none;
+								}
+									#foot-sitemap li a.last:hover {
+										border-bottom: none;
+									}
+								#foot-sitemap li a:hover {
+									background: rgba(0,0,0,0.2);
+									border-bottom: 1px solid rgba(0,0,0,0);
+								}
+							#foot-sitemap li a div {
+								display: inline-block;
+								width: 2em;
+							}
+								#foot-sitemap li svg {
+									color: #bdbdbd;
+								}
