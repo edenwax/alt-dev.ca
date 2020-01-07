@@ -212,7 +212,7 @@ a, h1, h2, h3, h4, h5, ul, li, div, section {
 					}
 					#content-two .line {
 						width: 30%;
-						margin: 1em 0 1em 0;
+						margin: 2em 0;
 						background: #6d6d6d;
 					}
 						#content-two .feat-title {
@@ -229,101 +229,85 @@ a, h1, h2, h3, h4, h5, ul, li, div, section {
 							line-height: 1.6em;
 							color: #e3e3e3;
 						}
-			#quote {
+			#about {
 				max-width: 1440px;
-				margin: -4em auto 0 auto;
+				margin: -4em auto 4em auto;
 				background: #fff;
-				box-shadow: rgba(0,0,0,0.4) 0 0 25px;
-				text-align: center;
+				border-radius: 5px;
+				box-shadow:
+				 	0 2.8px 2.2px rgba(0, 0, 0, 0.02),
+				  	0 6.7px 5.3px rgba(0, 0, 0, 0.028),
+				  	0 12.5px 10px rgba(0, 0, 0, 0.035),
+				  	0 22.3px 17.9px rgba(0, 0, 0, 0.042),
+				  	0 41.8px 33.4px rgba(0, 0, 0, 0.05),
+				  	0 100px 80px rgba(0, 0, 0, 0.07);
 				z-index: 999;
 			}
-				#quote h1 {
-					font-size: 1.4em;
-					font-weight: 700;
-					padding: 2em;
-					color: #333;
-				}
-					#quote h1 a {
-						font-weight: 700;
-						text-transform: uppercase;
-						font-size: 0.8em !important;
-						letter-spacing: 2px;
-						padding: 0.8em 1.2em;
-						border: 2px solid #86bac7;
-						border-radius: 10px;
-						margin: 0 0 0 1em;
-						color: #176477;
-						transition: all .1s ease-in-out;
-						z-index: 999;
-					}
-						#quote h1 a:hover {
-							background: #176477;
-							border: 2px solid #176477;
-							color: #fff;
-						}
-			#about {
-				margin-top: -5em;
-				z-index: -99;
-				padding: 0 0 4em 0;
-			}
 				#about section {
-					max-width: 1440px;
-					margin: 9em auto 0 auto;
+					padding: 3em 2em 4em 2em;
 					display: flex;
 				}
+				#about h1 {
+					font-size: 2em;
+					font-weight: 700;
+					text-transform: uppercase;
+					padding: 0;
+					color: #333;
+				}
+					#about .line {
+						width: 75px;
+						background: #176477;
+						margin: 2em 0;
+					}
 					#about .left {
 						width: 60%;
 					}
-						#about section h1 {
-							color: #fff;
-							font-size: 1.4em;
-							font-weight: 400;
-						}
-							#about h1 svg {
-								margin: 0 0.5em 0 0;
-							}
-						#about section .line {
-							margin: 1em 0 1em 0;
-							width: 95px;
-							background: #f7a350;
-						}
-						#about section p {
-							color: #ace2ef;
-							line-height: 1.4em;
-						}
-							#about .left a {
-								padding: 1em 1.2em;
-								margin: 0 1em 0 0;
-								border: 2px solid #ace2ef;
-								border-radius: 10px;
-								color: #fff;
-								font-weight: 700;
-								transition: all .1s ease-in-out;
-							}
-								p.mtt-link {
-									margin: 2em 0 0 0;
-								}
-								#about .left svg {
-									margin: 0 1em 0 0;
-								}
-								#about .left a:hover {
-									background: #f7a350;
-									border: 2px solid #f7a350;
-									color: #fff;
-								}
-					#about .right {
-						width: 40%;
-						text-align: center;
+					#about a {
+						padding: 1em 1.2em;
+						margin: 0 1em 0 0;
+						border: 2px solid #ace2ef;
+						border-radius: 10px;
+						color: #176477;
+						font-weight: 700;
+						transition: all .1s ease-in-out;
 					}
-						#about .right svg {
-							color: #f7a350;
-							font-size: 16em;
+						#about p {
+							line-height: 1.6em;
 						}
-						#about .right div {
-							display: block;
-							color: #ace2ef;
-							margin: 2em 0 0 0;
+						p.mtt-link {
+							margin: 4em 0 0 0;
 						}
+						#about svg {
+							margin: 0 1em 0 0;
+						}
+						#about a:hover {
+							background: #f7a350;
+							border: 2px solid #f7a350;
+							color: #fff;
+						}
+					#follow {
+						text-align: center;
+						color: #fff;
+						margin: 5em 0;
+					}
+						#follow a {
+							color: #fff;
+							font-size: 1.2em;
+							padding: 1em 3em;
+							border: 2px solid #fff;
+							border-radius: 75px;
+							transition: all .1s ease-in-out;
+						}
+							#follow a svg {
+								display: inline-block;
+								margin: 0 0 0 0.5em;
+							}
+							#follow a:hover {
+								background: #fff;
+								color: #176477;
+							}
+					
+			
 		footer {
 			min-height: 600px;
 			background: #333;
