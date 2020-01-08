@@ -30,14 +30,6 @@ a, h1, h2, h3, h4, h5, ul, li, div, section {
 	padding: 0;
 	font-weight: 400;
 }
-	h1 {
-		font-size: 3em;
-		font-weight: 700;
-	}
-	h2 {
-		font-size: 1.4em;
-		font-weight: 400;
-	}
 .line {
 	height: 3px;
 	background: #fff;
@@ -64,9 +56,9 @@ a, h1, h2, h3, h4, h5, ul, li, div, section {
 	overflow: hidden;
 }
 	#header-wrap {
-		background: url(../img/bg1-compressed.jpg) no-repeat center center;
-		/* image is not compressed, will be done later */
-		background-size: cover;
+		/*background: url(../img/new_bg.jpg) no-repeat center center;
+		background-size: cover;*/
+		background: #191919;
 		min-height: 600px;
 	}
 		header {
@@ -172,30 +164,16 @@ a, h1, h2, h3, h4, h5, ul, li, div, section {
 				color: #fff;
 			}
 				#content-one h1 {
-					margin: 3em 0 0 0;
+					margin: 4em 0 0 0;
+					font-size: 3em;
 				}
 				#content-one p {
 					width: 60%;
+					font-size: 1.4em;
 				}
-					#content-one p.work {
-						margin: 2em 0 0 0;
-						font-weight: 700;
-					}
-				#content-one a {
-					padding: 1em 2em;
-					border: 1px solid #fff;
-					border-radius: 10px;
-					color: #fff;
-					margin: 0 0 0 1em;
-					font-weight: 700;
-					transition: all .1s ease-in-out;
-				}
-					#content-one a:hover {
-						background: #fff;
-						color: #176477;
-					}
+
 			#content-two {
-				background: #333;
+				background: #191919;
 				padding: 1em 0 9em 0;
 				color: #fff;
 			}
@@ -207,11 +185,11 @@ a, h1, h2, h3, h4, h5, ul, li, div, section {
 					justify-content: space-between;
 				}
 					#content-two .feat {
-						width: 22%;
+						width: 30%;
 						padding-top: 2em;
 					}
 					#content-two .line {
-						width: 30%;
+						width: 20%;
 						margin: 2em 0;
 						background: #6d6d6d;
 					}
@@ -232,7 +210,7 @@ a, h1, h2, h3, h4, h5, ul, li, div, section {
 			#about {
 				max-width: 1440px;
 				margin: -4em auto 4em auto;
-				background: #fff;
+				background: #f4f4f4;
 				border-radius: 5px;
 				box-shadow:
 				 	0 2.8px 2.2px rgba(0, 0, 0, 0.02),
@@ -244,73 +222,67 @@ a, h1, h2, h3, h4, h5, ul, li, div, section {
 				z-index: 999;
 			}
 				#about section {
-					padding: 3em 2em 4em 2em;
-					display: flex;
+					padding: 3em 3em 4em 3em;
 				}
-				#about h1 {
-					font-size: 2em;
-					font-weight: 700;
-					text-transform: uppercase;
-					padding: 0;
-					color: #333;
-				}
-					#about .line {
-						width: 75px;
-						background: #176477;
-						margin: 2em 0;
-					}
-					#about .left {
-						width: 60%;
-					}
-					#about a {
-						padding: 1em 1.2em;
-						margin: 0 1em 0 0;
-						border: 2px solid #ace2ef;
-						border-radius: 10px;
-						color: #176477;
+					#about h1 {
+						font-size: 2em;
 						font-weight: 700;
-						transition: all .1s ease-in-out;
+						padding: 0;
+						color: #191919;
 					}
-						#about p {
-							line-height: 1.6em;
+						#about .line {
+							width: 75px;
+							background: #176477;
+							margin: 2em 0;
 						}
-						p.mtt-link {
-							margin: 4em 0 0 0;
-						}
-						#about svg {
+						#about a {
+							padding: 1em 1.2em;
 							margin: 0 1em 0 0;
-						}
-						#about a:hover {
-							background: #f7a350;
-							border: 2px solid #f7a350;
-							color: #fff;
-						}
-					#follow {
-						text-align: center;
-						color: #fff;
-						margin: 5em 0;
-					}
-						#follow a {
-							color: #fff;
-							font-size: 1.2em;
-							padding: 1em 3em;
-							border: 2px solid #fff;
-							border-radius: 75px;
+							border: 2px solid #176477;
+							border-radius: 10px;
+							color: #176477;
+							font-weight: 700;
 							transition: all .1s ease-in-out;
 						}
-							#follow a svg {
-								display: inline-block;
-								margin: 0 0 0 0.5em;
+							#about p {
+								line-height: 1.6em;
 							}
-							#follow a:hover {
-								background: #fff;
-								color: #176477;
+							p.mtt-link {
+								margin: 4em 0 0 0;
 							}
+							#about svg {
+								margin: 0 1em 0 0;
+							}
+							#about a:hover {
+								background: #176477;
+								border: 2px solid #176477;
+								color: #fff;
+							}
+						#follow {
+							text-align: center;
+							color: #fff;
+							margin: 5em 0;
+						}
+							#follow a {
+								color: #fff;
+								font-size: 1.2em;
+								padding: 1em 3em;
+								border: 2px solid #fff;
+								border-radius: 75px;
+								transition: all .1s ease-in-out;
+							}
+								#follow a svg {
+									display: inline-block;
+									margin: 0 0 0 0.5em;
+								}
+								#follow a:hover {
+									background: #fff;
+									color: #176477;
+								}
 					
 			
 		footer {
 			min-height: 600px;
-			background: #333;
 			width: 100%;
 		}
 			#footer-wrapper {
@@ -324,23 +296,16 @@ a, h1, h2, h3, h4, h5, ul, li, div, section {
 				}
 					#footer-columns div {
 						width: 30%;
-						color: #bdbdbd;
+						color: #fff;
 					}
-					#foot-logo {}
-						#foot-logo h2 {
-							margin: 1em 0 0 0;
-							padding: 0;
-							font-weight: 400;
-						}
-						#foot-logo .line {
-							background: #1f1f1f;
-							margin: 1em 0 1em 0;
-						}
-						#foot-logo p {
+						#footer-columns div h2 {
 							margin: 0 0 1em 0;
+							padding: 0;
+							font-weight: 700;
+							font-size: 1em;
+							text-transform: uppercase;
+							color: #e7faff;
 						}
-
-
 					#foot-sitemap {
 
 					}
@@ -370,5 +335,23 @@ a, h1, h2, h3, h4, h5, ul, li, div, section {
 								width: 2em;
 							}
 								#foot-sitemap li svg {
-									color: #bdbdbd;
+									color: #b8e9f5;
 								}
+
+						#footer-columns .line {
+							background: #fff;
+							margin: 1.5em 0;
+							width: 20%;
+						}
+							#foot-logo h2, #foot-logo p { text-align: center; }
+							#foot-logo p { text-align: justify; }
+							#foot-logo .line { margin: 1.5em auto; }
+
+							#foot-social h2 { text-align: right; }
+							#foot-social .line { margin-left: auto; }
+						#foot-logo p {
+							margin: 0 0 1em 0;
+							color: #b8e9f5;
+						}
+
+
