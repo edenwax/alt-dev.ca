@@ -8,9 +8,7 @@
 
    main.css for alt-dev.ca 
    ----------------------------
-   version: 		0.0.6-dev       
-   created:    		17-dec-2019
-   last-modified:  	29-dec-2019
+   last-modified:  	07-jan-2020
    modified by:		colin berry
    ----------------------------
 */
@@ -261,7 +259,7 @@ a, h1, h2, h3, h4, h5, ul, li, div, section {
 						#follow {
 							text-align: center;
 							color: #fff;
-							margin: 5em 0;
+							margin: 6em 0;
 						}
 							#follow a {
 								color: #fff;
@@ -288,7 +286,7 @@ a, h1, h2, h3, h4, h5, ul, li, div, section {
 			#footer-wrapper {
 				max-width: 1440px;
 				margin: 0 auto;
-				padding: 4em 0;
+				padding: 4em 0 0 0;
 			}
 				#footer-columns {
 					display: flex;
@@ -315,7 +313,7 @@ a, h1, h2, h3, h4, h5, ul, li, div, section {
 							#foot-sitemap li a {
 								color: #fff;
 								font-weight: 700;
-								padding: 1em;
+								padding: 1em 1em 1em 0;
 								display: block;
 								border-bottom: 1px solid rgba(0,0,0,0.2);
 								transition: all .1s ease-in-out;
@@ -329,6 +327,7 @@ a, h1, h2, h3, h4, h5, ul, li, div, section {
 								#foot-sitemap li a:hover {
 									background: rgba(0,0,0,0.2);
 									border-bottom: 1px solid rgba(0,0,0,0);
+									padding: 1em;
 								}
 							#foot-sitemap li a div {
 								display: inline-block;
@@ -342,7 +341,11 @@ a, h1, h2, h3, h4, h5, ul, li, div, section {
 							background: #fff;
 							margin: 1.5em 0;
 							width: 20%;
-						}
+						} 
+							#foot-logo img {
+								width: 200px;
+								margin: 0 0 1em 0;
+							}
 							#foot-logo h2, #foot-logo p { text-align: center; }
 							#foot-logo p { text-align: justify; }
 							#foot-logo .line { margin: 1.5em auto; }
@@ -350,8 +353,11 @@ a, h1, h2, h3, h4, h5, ul, li, div, section {
 							#foot-social h2 { text-align: right; }
 							#foot-social .line { margin-left: auto; }
 						#foot-logo p {
-							margin: 0 0 1em 0;
 							color: #b8e9f5;
+						}
+						#footer-copyright {
+							color: #fff;
+							padding: 2em 0 0 0;
 						}
 
 

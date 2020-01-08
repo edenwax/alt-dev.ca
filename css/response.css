@@ -12,11 +12,9 @@
   		padding-left: 1em;
   		padding-right: 1em;
   	}
-  	section div.feat {
-  		width: 48% !important;
-  	}
 	#about {
 		width: 100%;
+		border-radius: 0;
 	}
 		#about .left {
 			padding: 0 1em 0 1em;
@@ -40,6 +38,11 @@
 	}
 	#content-two {
 		padding: 1em 1em 4em 1em;
+	}
+	section div.feat {
+		width: 100% !important;
+		display: block;
+		margin: 0 0 3em 0;
 	}
 	#quote {
 		margin-top: 0;
@@ -67,6 +70,26 @@
 	 	#about .right {
 	 		display: none;
 	 	}
+	 #footer-wrapper {
+	 	padding-top: 1em;
+	 }
+	 #footer-columns {
+	 	display: block;
+	 	padding: 0 2em;
+	 }
+		 #footer-columns div {
+		 	width: 100% !important;
+		 }
+		 	#foot-sitemap {
+		 		display: none;
+		 	}
+		 	#foot-social {
+		 		margin: 4em 0 0 0;
+		 	}
+		 #footer-copyright {
+		 	text-align: center;
+		 	padding: 3em 0 3em 0;
+		 }
 }
 
 @media only screen and (max-width: 800px) {
