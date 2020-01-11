@@ -170,4 +170,8 @@
 	 	.feat-desc {
 	 		font-size: 0.8em !important;
 	 	}
+
+	 	#follow a {
+	 		font-size: 1em;
+	 	}
 }
